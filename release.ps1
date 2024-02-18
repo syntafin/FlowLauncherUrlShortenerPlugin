@@ -1,0 +1,2 @@
+dotnet publish Flow.Launcher.Plugin.TinyUrlPlugin -c Release -r win-x64 --no-self-contained
+Compress-Archive -LiteralPath Flow.Launcher.Plugin.TinyUrlPlugin/bin/Release/win-x64/publish -DestinationPath Flow.Launcher.Plugin.TinyUrlPlugin/bin/TinyUrlPlugin.zip -Force
