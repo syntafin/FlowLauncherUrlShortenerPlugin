@@ -10,13 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{1A79DEFE-18E0-49B4-B5F6-A9D394E0BB0A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{DF6BCB18-F763-45A4-99FF-8E097C239966}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Downloads\work\publish-action.yaml = ..\..\..\..\Downloads\work\publish-action.yaml
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,9 +23,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{DF6BCB18-F763-45A4-99FF-8E097C239966} = {1A79DEFE-18E0-49B4-B5F6-A9D394E0BB0A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B3E82DD-A649-4EA3-9EA7-630FAF627FAA}

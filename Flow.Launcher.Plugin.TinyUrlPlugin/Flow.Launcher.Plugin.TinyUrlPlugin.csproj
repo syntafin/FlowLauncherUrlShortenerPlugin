@@ -27,6 +27,7 @@
 
   <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
+    <None Include=".github\workflows\publish-action.yaml" />
   </ItemGroup>
 
   <ItemGroup>
