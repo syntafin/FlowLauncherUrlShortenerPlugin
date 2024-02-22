@@ -1,7 +1,5 @@
-using System;
 using System.Collections.Generic;
 using System.Net.Http;
-using System.Security.Policy;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -51,10 +49,8 @@ public class TinyUrlPlugin : IAsyncPlugin
                 IcoPath = "icons/icon.png"
             };
         }
-
         else if (longUrl == string.Empty)
             return new Result { Title = "enter a url", IcoPath = "icons/icon.png" };
-
         else
             return new Result
             {
@@ -62,6 +58,5 @@ public class TinyUrlPlugin : IAsyncPlugin
                 SubTitle = $"Failed to shorten URL. Status code: {response.StatusCode}",
                 IcoPath = "icons/icon.png"
             };
-        
     }
 }
