@@ -10,6 +10,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{BF1D812D-5ACA-423F-B3DE-F25B513295F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{D7E99615-A75E-4593-A89D-F43EA442E58F}"
+	ProjectSection(SolutionItems) = preProject
+		Flow.Launcher.Plugin.TinyUrlPlugin\.github\workflows\publish-action.yaml = Flow.Launcher.Plugin.TinyUrlPlugin\.github\workflows\publish-action.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +30,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D7E99615-A75E-4593-A89D-F43EA442E58F} = {BF1D812D-5ACA-423F-B3DE-F25B513295F5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B3E82DD-A649-4EA3-9EA7-630FAF627FAA}
