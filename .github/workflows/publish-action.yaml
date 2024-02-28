@@ -25,9 +25,9 @@ jobs:
       - run: echo ${{steps.version.outputs.prop}} 
       - name: Build
         run: |
-          dotnet publish 'Flow.Launcher.Plugin.TinyUrlPlugin.csproj' -r win-x64  -c Release -o "TinyUrlPlugin"
+          dotnet publish 'Flow.Launcher.Plugin.TinyUrlPlugin.csproj' -r win-x64  -c Release -o "TinyUrlPlugin-${{steps.version.outputs.prop}}"
           7z a -tzip "TinyUrlPlugin-${{steps.version.outputs.prop}}.zip" "./TinyUrlPlugin-${{steps.version.outputs.prop}}/*"
-          
+          rm -r "WindowWalker-${{steps.version.outputs.prop}}"
       - name: Publish
         uses: softprops/action-gh-release@v1
         with:
@@ -36,6 +36,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
-
-
-    
