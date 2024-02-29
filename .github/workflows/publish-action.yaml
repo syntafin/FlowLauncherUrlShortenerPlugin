@@ -27,8 +27,8 @@ jobs:
       - name: Build
         run: |
           dotnet publish -r win-x64  -c Release -p:PublisherDir="TinyUrlPlugin-${{steps.version.outputs.prop}}"
-          7z a -tzip "TinyUrlPlugin-${{steps.version.outputs.prop}}.zip" "./bin/Release/win-x64/publish/*" "./icons/*"
-          rm -r "./bin/Release/win-x64/publish/*"
+          7z a -tzip "TinyUrlPlugin-${{steps.version.outputs.prop}}.zip" "./bin/Release/win-x64/publish/*" "./Flow.Launcher.Plugin.TinyUrlPlugin/icons/*"
+          
         
       - name: Publish
         uses: softprops/action-gh-release@v1
