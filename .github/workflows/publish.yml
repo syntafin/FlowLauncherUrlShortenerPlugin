@@ -28,7 +28,7 @@ jobs:
       - name: Build
         run: |
           dotnet publish -r win-x64  -c Release -p:PublisherDir="./publish"
-          7z a -tzip "TinyUrlPlugin-${{steps.version.outputs.prop}}.zip" "./Flow.Launcher.Plugin.TinyUrlPlugin/bin/Release/win-x64/publish/*" "./Flow.Launcher.Plugin.TinyUrlPlugin/icons/*"
+          7z a -tzip "TinyUrlPlugin-${{steps.version.outputs.prop}}.zip" "./Flow.Launcher.Plugin.TinyUrlPlugin/bin/Release/win-x64/publish/*" "./Flow.Launcher.Plugin.TinyUrlPlugin/icons"
          
         
       - name: Publish
