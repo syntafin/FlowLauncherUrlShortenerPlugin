@@ -33,7 +33,7 @@ jobs:
       - name: Publish
         uses: softprops/action-gh-release@v1
         with:
-          files: "TinyUrlPlugin*"
+          files: "TinyUrlPlugin-${{ steps.version.outputs.prop }}.zip"
           tag_name: "v${{steps.version.outputs.prop}}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
