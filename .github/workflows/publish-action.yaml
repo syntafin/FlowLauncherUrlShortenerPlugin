@@ -26,7 +26,7 @@ jobs:
       - run: echo ${{steps.version.outputs.prop}} 
       - name: Build
         run: |
-          dotnet publish 'TinyUrlPlugin/Flow.Launcher.Plugin.TinyUrlPlugin/Flow.Launcher.Plugin.TinyUrlPlugin.csproj' -r win-x64  -c Release -p:PublisherDir="TinyUrlPlugin-${{steps.version.outputs.prop}}"
+          dotnet publish -r win-x64  -c Release -p:PublisherDir="TinyUrlPlugin-${{steps.version.outputs.prop}}"
           7z a -tzip "TinyUrlPlugin-${{steps.version.outputs.prop}}.zip" "./TinyUrlPlugin-${{steps.version.outputs.prop}}/*"
           rm -r "TinyUrlPlugin-${{steps.version.outputs.prop}}"
         
