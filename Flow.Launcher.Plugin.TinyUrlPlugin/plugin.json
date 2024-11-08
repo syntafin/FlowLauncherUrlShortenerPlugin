@@ -1,12 +1,15 @@
 {
-  "ID": "589CA535BD5041E78179C4F2D2F2D8FD",
-  "ActionKeyword": "turl",
-  "Name": "TinyUrlPlugin",
-  "Description": "a plugin that use tinyurl api, it's very basic but powerful",
-  "Author": "haider",
-  "Version": "1.0.5",
+  "ID": "7B77D637-CB56-4168-BF1B-C8AD245353D8",
+  "ActionKeyword": "sl",
+  "Name": "Shortlink App",
+  "Description": "A FlowLauncher Plugin to easily create Shortlinks via the DotDev platform",
+  "Author": "Syntafin",
+  "Version": "1.0.0",
   "Language": "csharp",
-  "Website": "https://github.com/DevHJS/Flow.Launcher.Plugin.TinyUrlPlugin",
+  "Website": "https://github.com/syntafin/FlowLauncherUrlShortenerPlugin",
   "IcoPath": "icon.png",
-  "ExecuteFileName": "Flow.Launcher.Plugin.TinyUrlPlugin.dll"
+  "ExecuteFileName": "Flow.Launcher.Plugin.ShortlinkPlugin.dll",
+  "Settings": {
+    "Path": "SettingsTemplate.yaml"
+  }
 }

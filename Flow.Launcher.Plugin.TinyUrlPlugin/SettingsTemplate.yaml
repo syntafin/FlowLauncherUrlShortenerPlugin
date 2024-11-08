@@ -1,0 +1,12 @@
+settings:
+  - name: ApiKey
+    display_name: "API Key"
+    type: text
+    description: "Geben Sie Ihren API-Schlüssel ein."
+    default_value: ""
+  
+  - name: UseSandbox
+    display_name: "Sandbox-Modus verwenden"
+    type: toggle
+    description: "Aktiviere diesen Schalter, um den Sandbox-Modus zu verwenden."
+    default_value: false

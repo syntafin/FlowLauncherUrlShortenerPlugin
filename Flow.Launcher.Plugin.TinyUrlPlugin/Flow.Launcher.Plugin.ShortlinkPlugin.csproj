@@ -1,17 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0-windows7.0</TargetFramework>
-    <AssemblyName>Flow.Launcher.Plugin.TinyUrlPlugin</AssemblyName>
-    <PackageId>Flow.Launcher.Plugin.TinyUrlPlugin</PackageId>
+    <AssemblyName>Flow.Launcher.Plugin.ShortlinkPlugin</AssemblyName>
+    <PackageId>Flow.Launcher.Plugin.ShortlinkPlugin</PackageId>
     <Authors>haider</Authors>
-    <PackageProjectUrl>https://github.com/haider/Flow.Launcher.Plugin.TinyUrlPlugin</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/haider/Flow.Launcher.Plugin.TinyUrlPlugin</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/syntafin/FlowLauncherUrlShortenerPlugin</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/syntafin/FlowLauncherUrlShortenerPlugin</RepositoryUrl>
     <PackageTags>flow-launcher flow-plugin</PackageTags>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+    <UserSecretsId>46174a43-8ecc-4bff-9e59-72bddf80f239</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -29,6 +30,15 @@
     <Content Include="plugin.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SettingsTemplate.yaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -36,7 +46,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Flow.Launcher.Plugin" Version="4.1.0" />
+    <PackageReference Include="Flow.Launcher.Plugin" Version="4.4.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>
